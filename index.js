@@ -31,8 +31,8 @@ const displayDetails = openapis =>{
                          </p>                     
                      </div>
                      <div>
-                         <button class="btn-arrow mt-3">
-                           ➜
+                         <button type="button" class="btn btn-arrow mt-3" data-bs-toggle="modal" data-bs-target="#api-modal">
+                              ➜
                          </button>
                     </div>
                 </div>
