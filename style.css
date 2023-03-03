@@ -21,12 +21,14 @@
 }
 .api-div{
     background-color: #FEF7F7;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #e2dada;
     padding: 10px;
     position: relative;
     border-radius: 10px;
 }
 .api-div img{
+  border: 1px solid rosybrown;
+  padding: 2px;
   max-width: 340px;
   max-height: 160px;
   border-radius: 5px;
@@ -39,4 +41,14 @@
 .card-footer{
     display: flex;
     justify-content: space-between;
+}
+.btn-arrow{
+    height: 40px;
+    width: 40px;
+    font-weight: 700;
+    font-size: larger;
+    color: #EB5757;
+    background-color: #FEF7F7;
+    border: none;
+    border-radius: 20px;
 }

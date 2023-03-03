@@ -14,7 +14,7 @@ const displayDetails = openapis =>{
         apiDiv.classList.add('api-div');
         apiDiv.innerHTML = `
                 <img src="${openapi.image}" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body mt-3 mb-2">
                     <h5 class="card-title">Features</h5>
                     <p class="card-text">
                         1.${openapi.features[0]} <br>
@@ -26,12 +26,12 @@ const displayDetails = openapis =>{
                      <div> 
                          <h5 class="card-title">${openapi.name}</h5>
                          <p class="card-text">
-                            Date:-
-                            ${openapi.published_in}
+                          Release:- 
+                              ${openapi.published_in}
                          </p>                     
                      </div>
                      <div>
-                         <button class="mt-3">
+                         <button class="btn-arrow mt-3">
                            ➜
                          </button>
                     </div>
