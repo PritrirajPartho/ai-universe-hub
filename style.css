@@ -35,3 +35,8 @@
     height: 2px;
     width: 5px;
 }
+/* dfff card footer */
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+}

@@ -29,12 +29,12 @@ const displayDetails = openapis =>{
                             Date:-
                             ${openapi.published_in}
                          </p>                     
-                         </div>
-                </div>
-                <div>
-                   <button>
-                     ➜
-                   </button>
+                     </div>
+                     <div>
+                         <button class="mt-3">
+                           ➜
+                         </button>
+                    </div>
                 </div>
         `
         apisContiner.appendChild(apiDiv);
