@@ -1,0 +1,37 @@
+/* start here */
+.btn-sort-div{
+    display: flex;
+    justify-content: center;
+}
+.btn-sort-div button{
+    border: none;
+    width: 160px;
+    height: 62px; 
+    font-size: larger;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #EB5757;
+    border-radius: 10px;
+}
+/*root home design.......*/
+#apis-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.api-div{
+    background-color: #FEF7F7;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.api-div img{
+  max-width: 340px;
+  max-height: 160px;
+  border-radius: 5px;
+}
+.arrow-icon{
+    height: 2px;
+    width: 5px;
+}
