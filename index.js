@@ -69,7 +69,14 @@ const OpenApiDetails = api =>{
     document.getElementById('integration-3').innerText = api.integrations[2];
     // right part
     console.log(api.logo)
-    document.getElementById('img-details').innerText = api.logo;
+    const rightPart = document.getElementById('right-part');
+    const imgForRightPart = document.createElement('div');
+    imgForRightPart.innerHTML = `
+                  <img src="${api.image_link[0]}" alt=""> </img>
+                  <h2 id="heading-1"></h2>
+                  <p id="heading-2"></p>
+            `
+    rightPart.appendChild(imgForRightPart);      
     document.getElementById('heading-1').innerText = api.input_output_examples[0].input;
     document.getElementById('heading-2').innerText = api.input_output_examples[1].output;
 }

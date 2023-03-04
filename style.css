@@ -13,6 +13,7 @@
     background-color: #EB5757;
     border-radius: 10px;
 }
+
 /*root home design.......*/
 #apis-container{
     display: grid;
@@ -37,7 +38,8 @@
     height: 2px;
     width: 5px;
 }
-/* dfff card footer */
+
+/* card footer.......... */
 .card-footer{
     display: flex;
     justify-content: space-between;
@@ -52,16 +54,30 @@
     border: none;
     border-radius: 20px;
 }
+
 /*modal related style */
 .modal-dialog{
   max-width: 1300px;
   max-height: 800px;
 }
 .modal-content{
-    width: 1200px;
-    height: 780px;
+    width: 1150px;
+    height: 650px;
+    margin-left: 75px;
+    margin-top: 20px;
 }
 .modal-root{
     display: flex;
+    justify-content: space-between;
     margin: 50px;
+}
+.modal-left-part{
+    border: 2px solid #EB5757;
+    overflow: hidden;
+    width: 400px;
+    margin-right: 100px;
+}
+.modal-right-part img{
+  width: 200px;
+  height: 150px;
 }
