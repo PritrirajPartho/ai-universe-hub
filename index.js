@@ -60,8 +60,16 @@ const OpenApiDetails = api =>{
     document.getElementById('price-2').innerText = api.pricing[1].plan + api.pricing[1].price;
     document.getElementById('price-3').innerText = api.pricing[2].plan + api.pricing[2].price;
     // features
-    console.log(api.features)
     document.getElementById('features-1').innerText = api.features["1"].feature_name;
     document.getElementById('features-2').innerText = api.features["2"].feature_name;
     document.getElementById('features-3').innerText = api.features["3"].feature_name;
+    // integraitions
+    document.getElementById('integration-1').innerText = api.integrations[0];
+    document.getElementById('integration-2').innerText = api.integrations[1];
+    document.getElementById('integration-3').innerText = api.integrations[2];
+    // right part
+    console.log(api.logo)
+    document.getElementById('img-details').innerText = api.logo;
+    document.getElementById('heading-1').innerText = api.input_output_examples[0].input;
+    document.getElementById('heading-2').innerText = api.input_output_examples[1].output;
 }
