@@ -1,15 +1,16 @@
-const dataLoad = () =>{
+const dataLoading = () =>{
     fetch('https://openapi.programming-hero.com/api/ai/tools')
     .then(res => res.json())
     .then(data => displayDetails(data.data.tools));
 }
-dataLoad();
+dataLoading();
 
+/*step----2*/
 const displayDetails = openapis =>{
-//    console.log(openapis);
-   const apisContiner = document.getElementById('apis-container');
-   openapis.forEach(openapi => {
-         console.log(openapi);
+    //console.log(openapis);
+    const apisContainer = document.getElementById('apis-container');
+    openapis.forEach(openapi => {
+        //  console.log(openapi);
         const apiDiv = document.createElement('div');
         apiDiv.classList.add('api-div');
         apiDiv.innerHTML = `
@@ -31,12 +32,32 @@ const displayDetails = openapis =>{
                          </p>                     
                      </div>
                      <div>
-                         <button type="button" class="btn btn-arrow mt-3" data-bs-toggle="modal" data-bs-target="#api-modal">
+                         <button onclick="loadApiDetail('${openapi.id}')"  type="button" class="btn btn-arrow mt-3" data-bs-toggle="modal" data-bs-target="#api-modal">
                               ➜
                          </button>
                     </div>
                 </div>
         `
-        apisContiner.appendChild(apiDiv);
+        apisContainer.appendChild(apiDiv);
    })
+}
+
+/* id onujaye details dekanu */
+const loadApiDetail = apiId =>{
+    const url = `https://openapi.programming-hero.com/api/ai/tool/${apiId}`;
+    console.log(url);
+    fetch(url)
+    .then(res => res.json())
+    .then(data => OpenApiDetails(data.data))
+}
+
+/* display single api details....*/
+const OpenApiDetails = api =>{
+    console.log(api);
+    document.getElementById('api-description').innerText = api.description;
+    // pricing
+    console.log(api.pricing[0]);
+    document.getElementById('price-1').innerText = api.pricing[0].plan + api.pricing[0].price;
+    document.getElementById('price-2').innerText = api.pricing[1].plan + api.pricing[1].price;
+    document.getElementById('price-3').innerText = api.pricing[2].plan + api.pricing[2].price;
 }

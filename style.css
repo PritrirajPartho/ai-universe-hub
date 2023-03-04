@@ -52,3 +52,12 @@
     border: none;
     border-radius: 20px;
 }
+/*modal related style */
+.modal-dialog{
+  max-width: 1300px;
+  max-height: 800px;
+}
+.modal-content{
+    width: 1200px;
+    height: 780px;
+}
