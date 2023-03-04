@@ -24,7 +24,7 @@
     background-color: #FEF7F7;
     border: 2px solid #e2dada;
     padding: 10px;
-    position: relative;
+    /* position: relative; */
     border-radius: 10px;
 }
 .api-div img{

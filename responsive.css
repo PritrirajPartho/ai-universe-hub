@@ -8,7 +8,7 @@
             background-color: #FEF7F7;
             border: 2px solid #e2dada;
             padding: 10px;
-            position: relative;
+            /* position: relative; */
             border-radius: 10px;
         }
 
@@ -16,17 +16,74 @@
         .modal-dialog{
             max-width: 1300px;
             max-height: 800px;
-            margin-left: 0;
-            margin-top: 0;
+            margin-left: 0px;
+            margin-top: 0px;
             margin-right: 100px;
           }
           .modal-content{
               width: 500px;
               height: 1200px;
+              margin-top: 50px;
               margin-right: 100px;
           }
         .modal-root{
             display: flex;
             flex-direction: column;
+            margin: auto;
+        }
+        .modal-left-part{
+            border: 1px solid #EB5757;
+            overflow: hidden;
+            width: 450px;
+            height: 450px;
+            margin-top: 85px;
+            margin-right: 100px;
+            margin-bottom: 30px;
+            background-color:  rgba(219, 175, 175, 0.945);
+            padding: 5px 0px 5px 5px;
+            border-radius: 10px;
+        }
+        .modal-left-part h2{
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 24px;
+        }
+        .modal-left-part div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 23px;
+            margin-bottom: 20px;
+        }
+        .modal-left-part div p{
+            width: 95px;
+            height: 75px;
+            margin-top: 20px;
+            margin-right: 18px;
+            margin-bottom: 0px;
+            word-break: break-all;
+            word-spacing: 5px;
+            overflow: hidden;
+            border:2px solid rebeccapurple ;
+            background-color: white;
+            padding: 12px 0px 2px 7px ;
+            color:rgb(95, 231, 10);
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .modal-right-part{
+            overflow: auto;
+            /* position: relative; */
+            width: 400px;
+            height: 450px;
+            background-color: #e7e0e0;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        .modal-right-part img{
+          max-width: 400px;
+          max-height: 300px;
+          margin-left: 10px;
+          margin-top: 10px;
+          border-radius: 5px;
         }
   }
