@@ -70,9 +70,13 @@ const OpenApiDetails = api =>{
     // right part
     console.log(api.logo)
     const rightPart = document.getElementById('right-part');
+    rightPart.innerHTML = '';
     const imgForRightPart = document.createElement('div');
+    imgForRightPart.classList.add('div-right-inter')
     imgForRightPart.innerHTML = `
-                  <img src="${api.image_link[0]}" alt=""> </img>
+                  <img src="${api.image_link[0]}" alt="">
+                     <p class="accuracy">${api.accuracy['score'] * 100} % accuracy</p>
+                  </img>
                   <h2 id="heading-1"></h2>
                   <p id="heading-2"></p>
             `
