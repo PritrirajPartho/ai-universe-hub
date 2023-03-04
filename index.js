@@ -58,7 +58,7 @@ const OpenApiDetails = api =>{
     // pricing
     document.getElementById('price-1').innerText = api.pricing[0].plan + api.pricing[0].price;
     document.getElementById('price-2').innerText = api.pricing[1].plan + api.pricing[1].price;
-    document.getElementById('price-3').innerText = api.pricing[2].plan + api.pricing[2].price;
+    document.getElementById('price-3').innerText = api.pricing[2].plan;
     // features
     document.getElementById('features-1').innerText = api.features["1"].feature_name;
     document.getElementById('features-2').innerText = api.features["2"].feature_name;

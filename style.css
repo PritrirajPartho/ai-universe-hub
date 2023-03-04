@@ -62,7 +62,7 @@
 }
 .modal-content{
     width: 1150px;
-    height: 650px;
+    height: 700px;
     margin-left: 75px;
     margin-top: 20px;
 }
@@ -74,10 +74,57 @@
 .modal-left-part{
     border: 2px solid #EB5757;
     overflow: hidden;
-    width: 400px;
+    width: 600px;
+    height: 450px;
     margin-right: 100px;
+    background-color:  rgba(219, 175, 175, 0.945);
+    padding: 20px 0px 10px 20px;
+    border-radius: 10px;
+}
+.modal-left-part h2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+.modal-left-part div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 23px;
+    margin-bottom: 0px;
+}
+.modal-left-part div p{
+    width: 95px;
+    height: 75px;
+    margin-top: 20px;
+    margin-right: 18px;
+    margin-bottom: 0px;
+    word-break: break-all;
+    word-spacing: 5px;
+    overflow: hidden;
+    border:2px solid rebeccapurple ;
+    background-color: white;
+    padding: 12px 0px 2px 7px ;
+    color:rgb(95, 231, 10);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.modal-right-part{
+    width: 487px;
+    height: 511px;
 }
 .modal-right-part img{
   width: 200px;
   height: 150px;
 }
+.features-integrations{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.features-integrations ul li{
+  font-size: large;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
